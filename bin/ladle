@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+ladle_dir = File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib'))
+$LOAD_PATH.unshift(ladle_dir) unless $LOAD_PATH.include?(ladle_dir)
+
+require 'ladle'
+
+ladle = Ladle.run(ARGV[0])
+case ARGV[1]
+when nil
+  ladle.boot
+when 'start'
+  ladle.boot
+when 'stop'
+  ladle.terminate
+when 'delete'
+  ladle.delete
+end
