@@ -1,12 +1,15 @@
-h1. Ladle
+Ladle
+=====
 
-h2. Description
+Description
+-----------
 
 I wondered what the best way to start a cluster of EC2 machines with knife was, this is my experiment.  I've toyed with shell scripts, but I like the idea of describing in a Ruby DSL what to boot.  This is it, use Ladle to boot your instances.
 
 It currently does nothing except has a skeleton for what it *will* do.
 
-h2. Usage
+Usage
+-----
 
     ladle test_cluster.rb
 
